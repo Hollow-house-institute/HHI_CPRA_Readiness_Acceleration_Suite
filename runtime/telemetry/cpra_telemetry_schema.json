@@ -1,0 +1,10 @@
+{
+  "event": "ADMT_REVIEW",
+  "timestamp": "ISO8601",
+  "actor": "string",
+  "decision_boundary": "string",
+  "risk_level": "LOW|MEDIUM|HIGH",
+  "escalation": true,
+  "stop_authority": false,
+  "evidence_hash": "sha256"
+}
