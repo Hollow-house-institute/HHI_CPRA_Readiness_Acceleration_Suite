@@ -22,3 +22,12 @@ def assurance():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000)
+
+@app.route("/health")
+def health():
+    return jsonify({
+        "runtime": "HEALTHY",
+        "telemetry_pipeline": "ACTIVE",
+        "export_system": "READY",
+        "governance_runtime": "ONLINE"
+    })
