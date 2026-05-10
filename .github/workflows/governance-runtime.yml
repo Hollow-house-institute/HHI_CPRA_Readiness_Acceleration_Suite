@@ -1,0 +1,15 @@
+name: CPRA Governance Runtime
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  governance-runtime:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate Checksums
+        run: bash automation/checksum_runtime.sh
+      - name: Export Audit Bundle
+        run: bash automation/export_audit_bundle.sh
