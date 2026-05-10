@@ -1,0 +1,10 @@
+{
+  "replay_status": "READY",
+  "evidence_sources": [
+    "runtime/telemetry",
+    "runtime/logs",
+    "governance",
+    "standards"
+  ],
+  "continuity_requirement": "Telemetry must remain replayable across export, audit, and release cycles."
+}
