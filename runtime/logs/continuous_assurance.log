@@ -1,0 +1,6 @@
+[HHI_CONTINUOUS_ASSURANCE]
+status=ACTIVE
+telemetry_continuity=ENFORCED
+evidence_integrity=VERIFIED
+admt_governance=ACTIVE
+audit_export=READY
