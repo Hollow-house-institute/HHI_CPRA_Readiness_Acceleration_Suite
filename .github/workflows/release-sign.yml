@@ -1,0 +1,17 @@
+name: Signed Governance Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate Release Bundle
+        run: bash automation/create_release_bundle.sh
+
+      - name: Generate Checksums
+        run: sha256sum releases/* > releases/RELEASE_CHECKSUMS.sha256
